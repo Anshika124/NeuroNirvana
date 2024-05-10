@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./Home.css";
 import App from "./App";
 import Login from "./Login";
-import Register from "./Register";
 import Home from "./Home";
 import Navigation from "./Navigation"
+import Comics from "./Comics";
 
 
 import logo from "../src/assets/logo.jpg";
@@ -62,7 +62,7 @@ const main = () => {
                 <Route path="/" element={<Home />} />
               )}
               <Route path="/Home" element={<Home />} />
-              
+              <Route path="/Comics" element={<Comics />} />          
               
               
               
