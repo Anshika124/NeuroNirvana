@@ -24,7 +24,7 @@ const Meditation = () => {
                                     <img src="https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906556.jpg?w=740&t=st=1697131249~exp=1697131849~hmac=d4ad4d726f91375e0f75426ad3ccd06390a2580c8ae2fe7c27254a9ce7c5eea9" class="icon-image" />
                                     
                                     <div class="btn">
-                                    <a href='https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC&si=HQeZp6awNZmdMHZS'>
+                                    <a href="http://localhost:3000/Player3">
                                         MEDITATION
                                         </a>
                                     </div>
