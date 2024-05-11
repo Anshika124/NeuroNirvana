@@ -20,7 +20,7 @@ import Player1 from "./Player1";
 import Player3 from "./Player3";
 import Good_Option from "./Good_Option";
 
-import Video from "./Video";
+import Video from "./video";
 import Home_page from "./Home_page";
 import NavBar from "react";
 import Outlet from "react";
@@ -28,7 +28,6 @@ import logo from "../src/assets/logo.jpg";
 import { useState } from "react";
 import logo2 from "../src/assets/logo2.png";
 const main = () => {
-
   if (
     localStorage.getItem("userInfo") &&
     !JSON.parse(localStorage.getItem("userInfo")).isLogin
@@ -38,47 +37,43 @@ const main = () => {
 
   function logoutUser() {
     localStorage.setItem("userInfo", JSON.stringify({ isLogin: false }));
-    
   }
   return (
     <>
       <Router>
         <div class="bgImage">
           <div class="header">
+            <Link to="/Report" style={{ textDecoration: "none" }}>
+              <button type="button">Login</button>
+            </Link>
             <div class="Logo"></div>
             {localStorage.getItem("userInfo") &&
-            JSON.parse(localStorage.getItem("userInfo")).isLogin && (
-              <div class="main_data">
-            
-              <div class="he1">
-                <img src={logo2} height="100vh" />
-              </div>
-              <div class="he">neuroNIRAVANA</div>
-            </div>
-            )}
+              JSON.parse(localStorage.getItem("userInfo")).isLogin && (
+                <div class="main_data">
+                  <div class="he1">
+                    <img src={logo2} height="100vh" />
+                  </div>
+                  <div class="he">neuroNIRAVANA</div>
+                </div>
+              )}
 
-            
             <div class="user_photo Logo"></div>
           </div>
 
           <div class="sectionContainer">
-            
-            {/*localStorage.getItem("userInfo") &&
-                JSON.parse(localStorage.getItem("userInfo")).isLogin && (
-                  <section class="leftSection">
-                  
-                  </section>
-                )*/}
-            <section class="leftSection"><Navigation />
+            <section class="leftSection">
+              <Navigation />
             </section>
 
             <Routes>
-              {localStorage.getItem("userInfo") &&
+              {/* {localStorage.getItem("userInfo") &&
               JSON.parse(localStorage.getItem("userInfo")).isLogin ? (
                 <Route path="/" element={<Home />} />
               ) : (
-                <Route path="/" element={<Home />} />
-              )}
+                
+              )} */}
+
+              <Route path="/" element={<Home />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/Comics" element={<Comics />} />
               <Route path="/App" element={<App />} />
@@ -89,7 +84,7 @@ const main = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/Sketching" element={<Sketching />} />
               <Route path="/Affirmation" element={<Affirmation />} />
-              <Route path="/Video" element={<Video />} />
+              <Route path="/video" element={<Video />} />
               <Route path="/Player" element={<Player />} />
               <Route path="/Player1" element={<Player1 />} />
               <Route path="/Player3" element={<Player3 />} />

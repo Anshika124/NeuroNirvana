@@ -46,7 +46,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 90%;
+    height: 100%;
     border-radius: 20px;
     align-items: center;
     margin:auto;
@@ -68,7 +68,7 @@ body{
 }
 
 .bgImage .sectionContainer .leftSection .navigation .navComponent .navImg {
-    width: 32%;
+    width: 30%;
     align-self: baseline;
 }
 

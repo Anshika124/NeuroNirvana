@@ -22,7 +22,7 @@ function Login()
       console.log(response)
       if (response.data === "success") {
         localStorage.setItem("userInfo",JSON.stringify({ isLogin: true}))
-        navigate('/');   
+        navigate('/Report');   
         window.location.reload();
       }
       else{
