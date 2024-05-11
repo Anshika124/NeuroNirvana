@@ -1,0 +1,20 @@
+.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer .icon .icon-image{
+    width: 175px;
+    height: 175px;   
+}
+.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 5px;
+}
+.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer .icon{
+    display: flex;
+    flex-direction: row;
+}
+.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer .icon .btn{
+    height: fit-content;
+    align-self: center;
+}

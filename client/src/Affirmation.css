@@ -1,0 +1,24 @@
+
+.main_affirmation{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_affirmation > img{
+    width: 50%;
+    
+    padding: 0;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.next_icon {
+    width:10%;
+    display: flex;
+    flex-flow: column-reverse;
+}
+.next_icon > img{
+    width:85%;
+    height:12%;
+}
+

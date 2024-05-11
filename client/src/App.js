@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './styles/form.css'
+import { Link } from 'react-router-dom';
 
 function app()
 {
@@ -37,7 +39,7 @@ function app()
               <div class="buttonContainer">
                 <button>Register</button>
                 <div class="accountSwitch">
-                  <p>Already Registred? <a href="#">Login</a></p>
+                  <p>Already Registred? <Link to={"/Login"}>Login</Link></p>
                 </div>
               </div>
             </form>

@@ -56,7 +56,7 @@ function Login()
               <div className="buttonContainer">
               <button type="submit" >Login</button>
                 <div className="accountSwitch">
-                  <p>New User? <Link to={"/App"}>Register</Link></p>
+                  <p>New User? <Link to={"/register"}>Register</Link></p>
                 </div>
               </div>
             </form>
