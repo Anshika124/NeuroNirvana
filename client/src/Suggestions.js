@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from './Navigation'
+import good_image from './assets/6569491.jpg';
 const Suggestions = () => {
   return (
     <>
@@ -12,12 +13,14 @@ const Suggestions = () => {
                             <div class="main-mainContainer">
                                 
                             <div class="icon">
-                                    <img src="https://img.freepik.com/free-vector/family-concept-illustration_114360-2047.jpg?w=900&t=st=1697140462~exp=1697141062~hmac=075b5914292560f050ca6b10fefdbeb5c9d4741e25548ee4c3baa488bfdf3b7c" class="icon-image" />
+                                    <img src={good_image} class="icon-image" />
+                                    
                                     <div class="btn">
-                                        <a href='https://www.wikihow.com/Keep-Healthy-Family-Relationships'>
-                                        TIPS TO SPEND QUALITY TIME WITH FAMILY
-                                    </a>
+                                    <a href="http://localhost:3000/Good_Option">   
+                                        GOOD TOUCH VS BAD TOUCH
+                                        </a>
                                     </div>
+                                    
 
                                 </div>
                                 <div class="icon">
@@ -47,4 +50,4 @@ const Suggestions = () => {
   )
 }
 
-export default Suggestions
+export default Suggestions;

@@ -1,0 +1,55 @@
+/*div{
+  border: 1px solid black;
+}*/
+
+  
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 130px;
+    height:110px;
+    
+  }
+  
+  
+  .video-preview, .merged-video {
+    width: 300px;
+    margin: 10px;
+    align-self: center;
+  }
+  
+  .merged-video-container {
+    margin-top: 20px;
+  }
+  button{
+    border: 1px solid black;
+    background: rgba(255, 250, 250, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    transition: all 400ms ease;
+  }
+  .creativity-video{
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 400px;
+    gap: 100px;
+align-items: center;
+
+
+  }
+
+.package-video{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  
+  width: 650px;
+  height: 250px;
+}
+.video-preview{
+    align-items: flex-end;
+}
