@@ -1,0 +1,8 @@
+.home_container{
+    
+    display: flex;
+}
+.text-home{
+    color:white;
+    font-size: 40px;
+}

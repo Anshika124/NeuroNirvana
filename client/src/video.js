@@ -1,7 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import ReactPlayer from 'react-player';
+import video from './assets/good_touch_english.mp4';
 import './Video.css';
-
+import './Player.css';
 function App() {
   const [isRecording, setIsRecording] = useState(false);
   const videoRef = useRef(null);
@@ -59,6 +61,8 @@ function App() {
       <div className="creativity-video">
         <div className="package-video">
       <div className="video-container">
+      <div class="video_class"><ReactPlayer controls={true} url={video}/>
+                        </div>
         <video ref={videoRef} className="video-preview" muted playsInline></video>
         <audio ref={audioRef} muted playsInline></audio>
       </div>

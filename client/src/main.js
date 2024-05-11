@@ -21,6 +21,7 @@ import Player3 from "./Player3";
 import Good_Option from "./Good_Option";
 
 import Video from "./Video";
+import Home_page from "./Home_page";
 import NavBar from "react";
 import Outlet from "react";
 import logo from "../src/assets/logo.jpg";
@@ -62,20 +63,21 @@ const main = () => {
 
           <div class="sectionContainer">
             
-            {localStorage.getItem("userInfo") &&
+            {/*localStorage.getItem("userInfo") &&
                 JSON.parse(localStorage.getItem("userInfo")).isLogin && (
                   <section class="leftSection">
-                  <Navigation />
+                  
                   </section>
-                )}
-            
+                )*/}
+            <section class="leftSection"><Navigation />
+            </section>
 
             <Routes>
               {localStorage.getItem("userInfo") &&
               JSON.parse(localStorage.getItem("userInfo")).isLogin ? (
                 <Route path="/" element={<Home />} />
               ) : (
-                <Route path="/" element={<Login />} />
+                <Route path="/" element={<Home />} />
               )}
               <Route path="/Home" element={<Home />} />
               <Route path="/Comics" element={<Comics />} />
@@ -91,7 +93,7 @@ const main = () => {
               <Route path="/Player" element={<Player />} />
               <Route path="/Player1" element={<Player1 />} />
               <Route path="/Player3" element={<Player3 />} />
-
+              <Route path="/Home_page" element={<Home_page />} />
               <Route path="/Good_Option" element={<Good_Option />} />
             </Routes>
           </div>
