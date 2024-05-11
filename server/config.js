@@ -5,9 +5,9 @@ mongoose.connect(
  "mongodb+srv://anshikaprajapati124:anshikaprajapati124@cluster0.qmiubtx.mongodb.net/NeuroNirvana?retryWrites=true&w=majority",
 
   {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
+    // useNewUrlParser: true,
+    //useUnifiedTopology: true, 
+  } 
 );
 
 mongoose.connection.on("error", (err) => {
