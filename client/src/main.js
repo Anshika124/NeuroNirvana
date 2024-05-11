@@ -43,7 +43,7 @@ const main = () => {
       <Router>
         <div class="bgImage">
           <div class="header">
-            <Link to="/Report" style={{ textDecoration: "none" }}>
+            <Link to="/Login" style={{ outline: 0 }}>
               <button type="button">Login</button>
             </Link>
             <div class="Logo"></div>

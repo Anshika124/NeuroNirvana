@@ -19,6 +19,16 @@ body{
     background: url(https://cdn.vectorstock.com/i/1000x1000/98/47/kids-meditation-children-yoga-kindergarten-sport-vector-36299847.webp) no-repeat ;
     background-size: cover;
 }
+
+.button {
+    outline: 0;
+    border: 0;
+    font-size:1.3rem;
+    background-color: #F6E06C;
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+
 /* section {
     border: 1px solid black;
 } */
