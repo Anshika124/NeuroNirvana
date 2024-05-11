@@ -20,7 +20,8 @@ import Player1 from "./Player1";
 import Player3 from "./Player3";
 import Good_Option from "./Good_Option";
 
-import Video from "./video";
+import Video from "./Video";
+import Map from "./Map";
 import Home_page from "./Home_page";
 import NavBar from "react";
 import Outlet from "react";
@@ -84,12 +85,13 @@ const main = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/Sketching" element={<Sketching />} />
               <Route path="/Affirmation" element={<Affirmation />} />
-              <Route path="/video" element={<Video />} />
+              <Route path="/Video" element={<Video />} />
               <Route path="/Player" element={<Player />} />
               <Route path="/Player1" element={<Player1 />} />
               <Route path="/Player3" element={<Player3 />} />
               <Route path="/Home_page" element={<Home_page />} />
               <Route path="/Good_Option" element={<Good_Option />} />
+              <Route path="/Map" element={<Map />} />
             </Routes>
           </div>
         </div>
