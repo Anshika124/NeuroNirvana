@@ -2,16 +2,17 @@ import React from "react";
 import "./styles/form.css";
 import axios from "axios";
 import Home from "./Home";
-import { NavLink, useActionData, useNavigate } from "react-router-dom";
+import { NavLink, useActionData, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navigation from "./Navigation";
-
 
 function Login() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
+  const [isVisible, setIsVisible] = useState(true)
+  
   function loginCheck(e) {
     e.preventDefault();
     // console.log('logging in with user email:',userEmail,'and user password',userPassword);
@@ -23,8 +24,10 @@ function Login() {
         console.log(response);
         if (response.data === "success") {
           localStorage.setItem("userInfo", JSON.stringify({ isLogin: true }));
-          navigate("/Report");
-          window.location.reload();
+          const summary = localStorage.getItem('summary');
+          alert(`${summary}`);
+          // navigate("/Report");
+          // window.location.reload();
           // {
           //   localStorage.getItem("userInfo") &&
           //   JSON.parse(localStorage.getItem("userInfo")).isLogin ? (
@@ -46,6 +49,7 @@ function Login() {
   }
   return (
     <>
+    
       <div className="mainBackground">
         <div className="container">
           <section className="firstSection">

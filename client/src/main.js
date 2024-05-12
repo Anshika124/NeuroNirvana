@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import "./Home.css";
 import App from "./App";
 import Login from "./Login";
@@ -20,15 +20,23 @@ import Player1 from "./Player1";
 import Player3 from "./Player3";
 import Good_Option from "./Good_Option";
 
-import Video from "./Video";
+import Video from "./video";
 import Map from "./Map";
 import Home_page from "./Home_page";
+import Report from "./Report";
 import NavBar from "react";
 import Outlet from "react";
 import logo from "../src/assets/logo.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo2 from "../src/assets/logo2.png";
-const main = () => {
+const Main = () => {
+  let login = 0;
+  // const location = useLocation();
+  // const [showLeftSection, setShowLeftSection] = useState(true);
+
+  // useEffect(() => {
+  //   setShowLeftSection(location.pathname !== "/login");
+  // }, [location]);
   if (
     localStorage.getItem("userInfo") &&
     !JSON.parse(localStorage.getItem("userInfo")).isLogin
@@ -45,7 +53,15 @@ const main = () => {
         <div class="bgImage">
           <div class="header">
             <Link to="/Login" style={{ outline: 0 }}>
-              <button type="button">Login</button>
+              <button type="button" style={{
+    outline: 0,
+    border: 0,
+    margin: '10px',
+    fontSize: '1.3rem',
+    backgroundColor: '#F6E06C',
+    padding: '7px 20px',
+    borderRadius: '20px'
+  }}>Login</button>
             </Link>
             <div class="Logo"></div>
             {localStorage.getItem("userInfo") &&
@@ -61,19 +77,25 @@ const main = () => {
             <div class="user_photo Logo"></div>
           </div>
 
-          <div class="sectionContainer">
-            <section class="leftSection">
-              <Navigation />
-            </section>
-
+          <div className="sectionContainer">
+            {/* {showLeftSection && (
+              <section className="leftSection">
+                <Navigation />
+              </section>
+            )} */}
+            <section className="leftSection">
+                <Navigation />
+              </section>
             <Routes>
               {/* {localStorage.getItem("userInfo") &&
               JSON.parse(localStorage.getItem("userInfo")).isLogin ? (
                 <Route path="/" element={<Home />} />
               ) : (
-                
+                <section class="leftSection">
+                  <Navigation />
+                </section>
               )} */}
-
+              
               <Route path="/" element={<Home />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/Comics" element={<Comics />} />
@@ -85,7 +107,7 @@ const main = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/Sketching" element={<Sketching />} />
               <Route path="/Affirmation" element={<Affirmation />} />
-              <Route path="/Video" element={<Video />} />
+              <Route path="/video" element={<Video />} />
               <Route path="/Player" element={<Player />} />
               <Route path="/Player1" element={<Player1 />} />
               <Route path="/Player3" element={<Player3 />} />
@@ -100,4 +122,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;
