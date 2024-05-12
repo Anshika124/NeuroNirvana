@@ -24,6 +24,7 @@ const Home_page = () => {
                                 <div class="image-container">
                                     <img src={home_image}/>
                                 </div>
+                                <a href="http://localhost:3000/Map1"><button>EMERGENCY TAP BUTTON</button></a>
                             </div>
 
                                 

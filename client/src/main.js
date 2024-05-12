@@ -22,6 +22,7 @@ import Good_Option from "./Good_Option";
 
 import Video from "./Video";
 import Map from "./Map";
+import Map1 from "./Map1";
 import Home_page from "./Home_page";
 import NavBar from "react";
 import Outlet from "react";
@@ -92,6 +93,7 @@ const main = () => {
               <Route path="/Home_page" element={<Home_page />} />
               <Route path="/Good_Option" element={<Good_Option />} />
               <Route path="/Map" element={<Map />} />
+              <Route path="/Map1" element={<Map1 />} />
             </Routes>
           </div>
         </div>
