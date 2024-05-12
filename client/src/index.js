@@ -15,7 +15,8 @@ import Creativity from './Creativity';
 import  Meditation from './Meditation';
 import Suggestions from './Suggestions';
 import Navigation from './Navigation';
-import Main from './main'
+import Main from './Main';
+import Report from './Report';
 
 
 

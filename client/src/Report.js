@@ -14,11 +14,12 @@ const Report = () => {
                             </div>
                             <div class="main-mainContainer">
                             <div class="report-text">
-                                
+                                dfghhj
                             </div>
                             </div>
                         </div>
                     </section>
+                  
                 
     </>
   )

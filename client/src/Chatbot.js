@@ -41,20 +41,12 @@ const Chatbot = () => {
 
         const botResponse = response.data.candidates[0].content.parts[0].text;
         summary = botResponse;
-        
+        localStorage.setItem('summary', summary);
         setMessages((msgs) => [
           ...msgs,
           { text: botResponse, id: msgs.length, sender: "bot" },
         ]);
-        if (summary.search(/Eating Disorder/)>-1)
-        {
-          alert(summary);
-          window.location.href = "http://localhost:3001/";
-        }
-        else if (summary.search(/Family Problems/)>-1)
-        {
-          alert(summary);
-        }
+        navigate('/Home')
       } catch (error) {
         console.error("Error in fetching response: ", error);
         setMessages((msgs) => [
