@@ -58,11 +58,11 @@ const Main = () => {
     outline: 0,
     border: 0,
     margin: '10px',
-    fontSize: '1.3rem',
+    fontSize: '1.1rem',
     backgroundColor: '#F6E06C',
     padding: '7px 20px',
     borderRadius: '20px'
-  }}>Login</button>
+  }}>Check Report</button>
             </Link>
             <div class="Logo"></div>
             {localStorage.getItem("userInfo") &&
