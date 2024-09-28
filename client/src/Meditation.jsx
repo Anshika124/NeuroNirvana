@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
 import Navigation from './Navigation'
+import { Link } from 'react-router-dom'
+
 const Meditation = () => {
   return (
     <>
@@ -24,9 +26,9 @@ const Meditation = () => {
                                     <img src="https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906556.jpg?w=740&t=st=1697131249~exp=1697131849~hmac=d4ad4d726f91375e0f75426ad3ccd06390a2580c8ae2fe7c27254a9ce7c5eea9" class="icon-image" />
                                     
                                     <div class="btn">
-                                    <a href="http://localhost:3000/Player3">
+                                    <Link to="/Player3">
                                         MEDITATION
-                                        </a>
+                                        </Link>
                                     </div>
                                     
 
@@ -34,9 +36,9 @@ const Meditation = () => {
                                 <div class="icon">
                                     <img src="https://img.freepik.com/free-vector/self-confidence-concept-illustration_114360-6835.jpg?w=740&t=st=1697137609~exp=1697138209~hmac=5dfdefc6c51d73cf16aee11fa247dd550d00d65e5e1e1ad6dcf6d5e380cc60bb" class="icon-image" />
                                     <div class="btn">
-                                        <a href='http://localhost:3000/Affirmation'>
+                                        <Link to='/Affirmation'>
                                         AFFIRMATION
-                                        </a>
+                                        </Link>
                                     </div>
 
                                 </div>

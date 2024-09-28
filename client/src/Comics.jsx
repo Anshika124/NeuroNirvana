@@ -24,8 +24,7 @@ const Comics = () => {
                 <a href={Comics_pdf} download>
                   <div class="comics btn">
                     <img src="https://i.pinimg.com/736x/a4/e6/61/a4e66117eeb76ece24a7ce9e82896d72.jpg" />
-                    
-                  </div >
+                    </div>
                 </a>
                 <a href={Comics_pdf1} download>
                 <div class="comics btn">

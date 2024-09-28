@@ -1,5 +1,6 @@
 import React from 'react'
 import './Good_Option.css'
+import { Link } from 'react-router-dom';
 const Good_Option = () => {
   return (
     <>
@@ -14,8 +15,8 @@ const Good_Option = () => {
                                 <div class="option_selector">
                                     <h2>Select Language Preference:</h2>
                                     <div class="button_class">
-                                        <a href="http://localhost:3000/Player"><button>English</button></a>
-                                        <a href="http://localhost:3000/Player1"><button>Hindi</button></a>
+                                        <Link to="/Player"><button>English</button></Link>
+                                        <Link to="/Player1"><button>Hindi</button></Link>
                                     </div>
                                 </div>
                             </div>

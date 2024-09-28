@@ -2,7 +2,8 @@ import React from 'react'
 import './Home_page.css'
 import home_image from './assets/image-removebg-preview.png';
 import Navigation from './Navigation'
-import Link from 'react'
+import { Link } from 'react-router-dom';
+
 
 const Home_page = () => {
   return (
@@ -24,7 +25,7 @@ const Home_page = () => {
                                 <div class="image-container">
                                     <img src={home_image}/>
                                 </div>
-                                <a href="http://localhost:3000/Map1"><button>EMERGENCY TAP BUTTON</button></a>
+                                <Link to="/Map1"><button>EMERGENCY TAP BUTTON</button></Link>
                             </div>
 
                                 
