@@ -1,5 +1,11 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import "./Home.css";
 import App from "./App";
 import Login from "./Login";
@@ -32,12 +38,18 @@ import { useState, useEffect } from "react";
 import logo2 from "../src/assets/logo2.png";
 const Main = () => {
   let login = 0;
+  const [menuOpen, setMenuOpen] = useState(false);
   // const location = useLocation();
   // const [showLeftSection, setShowLeftSection] = useState(true);
 
   // useEffect(() => {
   //   setShowLeftSection(location.pathname !== "/login");
   // }, [location]);
+
+  const toggleMenu = () => {
+    
+    setMenuOpen(!menuOpen);
+  };
   if (
     localStorage.getItem("userInfo") &&
     !JSON.parse(localStorage.getItem("userInfo")).isLogin
@@ -53,16 +65,22 @@ const Main = () => {
       <Router>
         <div class="bgImage">
           <div class="header">
+          <button onClick={toggleMenu}>Toggle</button>
             <Link to="/Login" style={{ outline: 0 }}>
-              <button type="button" style={{
-    outline: 0,
-    border: 0,
-    margin: '10px',
-    fontSize: '1.1rem',
-    backgroundColor: '#F6E06C',
-    padding: '7px 20px',
-    borderRadius: '20px'
-  }}>Check Report</button>
+              <button
+                type="button"
+                style={{
+                  outline: 0,
+                  border: 0,
+                  margin: "10px",
+                  fontSize: "1.1rem",
+                  backgroundColor: "#F6E06C",
+                  padding: "7px 20px",
+                  borderRadius: "20px",
+                }}
+              >
+                Check Report
+              </button>
             </Link>
             <div class="Logo"></div>
             {localStorage.getItem("userInfo") &&
@@ -84,9 +102,9 @@ const Main = () => {
                 <Navigation />
               </section>
             )} */}
-            <section className="leftSection">
-                <Navigation />
-              </section>
+            
+              <Navigation menuOpen={menuOpen}/>
+            
             <Routes>
               {/* {localStorage.getItem("userInfo") &&
               JSON.parse(localStorage.getItem("userInfo")).isLogin ? (
@@ -96,11 +114,11 @@ const Main = () => {
                   <Navigation />
                 </section>
               )} */}
-              
+
               <Route path="/" element={<Home />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/Comics" element={<Comics />} />
-               <Route path="/App" element={<App />} />
+              <Route path="/App" element={<App />} />
               <Route path="/Chatbot" element={<Chatbot />} />
               <Route path="/Creativity" element={<Creativity />} />
               <Route path="/Meditation" element={<Meditation />} />
