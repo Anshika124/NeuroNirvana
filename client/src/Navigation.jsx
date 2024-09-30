@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 const Navigation = (menuOpen) => {
   return (
     <>
-      <section style={{ display: "none" }} className="leftSection">
+      <div style={{ display: menuOpen.menuOpen==true ? "block":"none" }} className="leftSection">
         <div  class="navigation">
           <div class="navComponent">
             <div class="navImg">
               <img src="https://cdn-icons-png.flaticon.com/512/1147/1147086.png"></img>
             </div>
             <Link to="/Home_page">
-              <div class="navHead btn">HOME {console.log(menuOpen)}</div>
+              <div class="navHead btn">HOME </div>
             </Link>
           </div>
           <div class="navComponent">
@@ -54,7 +54,7 @@ const Navigation = (menuOpen) => {
             </Link>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

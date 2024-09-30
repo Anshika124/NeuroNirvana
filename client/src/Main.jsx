@@ -38,7 +38,7 @@ import { useState, useEffect } from "react";
 import logo2 from "../src/assets/logo2.png";
 const Main = () => {
   let login = 0;
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
   // const location = useLocation();
   // const [showLeftSection, setShowLeftSection] = useState(true);
 

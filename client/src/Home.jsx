@@ -8,7 +8,7 @@ import Outlet from "react";
 const Home = () => {
   return (
     <>
-      <section class="rightSection">
+      <div class="rightSection">
         <div class="mainContainer">
           <div class="header-mainContainer">
             <h4>STORYTIME</h4>
@@ -39,7 +39,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
