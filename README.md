@@ -1,5 +1,5 @@
 # NeuroNirvana
-### Problem Statement:
+### Problem Statement:  
 Developing a targeted solution for early detection and intervention of mental health issues in high-risk or underserved child populations.
 ### Approach
 Our web application aims to gamify the assessment of children's mental health, offering interactive solutions and personalized pathways based on their needs. It features AI-driven daily life questions, customized avatars, and a supportive community, promoting mental health awareness and well-being.

@@ -65,10 +65,9 @@ const Main = () => {
       <Router>
         <div class="bgImage">
           <div class="header">
-          <button onClick={toggleMenu}>Toggle</button>
+          {/* <button onClick={toggleMenu}>Toggle</button> */}
             <Link to="/Login" style={{ outline: 0 }}>
               <button
-                type="button"
                 style={{
                   outline: 0,
                   border: 0,
@@ -115,7 +114,7 @@ const Main = () => {
                 </section>
               )} */}
 
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home_page />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/Comics" element={<Comics />} />
               <Route path="/App" element={<App />} />
