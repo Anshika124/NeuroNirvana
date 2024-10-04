@@ -65,7 +65,7 @@ const Main = () => {
       <Router>
         <div class="bgImage">
           <div class="header">
-          {/* <button onClick={toggleMenu}>Toggle</button> */}
+          <button className="toggle-button" onClick={toggleMenu}>Toggle</button>
             <Link to="/Login" style={{ outline: 0 }}>
               <button
                 style={{
