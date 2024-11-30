@@ -1,170 +1,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
-    font-family: "Roboto", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
 
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 .bgImage {
-    width: 100%;
-    height: 100vh;
-    background: url(https://cdn.vectorstock.com/i/1000x1000/98/47/kids-meditation-children-yoga-kindergarten-sport-vector-36299847.webp) no-repeat ;
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background: url(https://cdn.vectorstock.com/i/1000x1000/98/47/kids-meditation-children-yoga-kindergarten-sport-vector-36299847.webp)
+    no-repeat;
+  background-size: cover;
 }
 
 .button {
-    outline: 0;
-    border: 0;
-    font-size:1.3rem;
-    background-color: #F6E06C;
-    padding: 7px 20px;
-    border-radius: 20px;
+  outline: 0;
+  border: 0;
+  font-size: 1.3rem;
+  background-color: #f6e06c;
+  padding: 7px 20px;
+  border-radius: 20px;
 }
 
 /* section {
     border: 1px solid black;
 } */
 .bgImage .header {
-    background-color: rgba(127, 218, 218, 0.676);
-    height: 10vh;
-
+  background-color: rgba(127, 218, 218, 0.676);
+  height: 10vh;
 }
 
 .bgImage .sectionContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bgImage .sectionContainer .leftSection{
-    width: 20%;
-    height: 90vh;
-    background-color: rgba(127, 218, 218, 0.676);
+.bgImage .sectionContainer .leftSection {
+  width: 20%;
+  height: 90vh;
+  background-color: rgba(127, 218, 218, 0.676);
 }
 
-.bgImage .sectionContainer .leftSection .navigation
-{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 100%;
-    border-radius: 20px;
-    align-items: center;
-    margin:auto;
-    margin-top: 10px;
-    background-color:rgba(80, 168, 168, 0.724)
+.bgImage .sectionContainer .leftSection .navigation {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgba(80, 168, 168, 0.724);
 }
 
-
-.bgImage .sectionContainer .leftSection .navigation .navComponent 
-{
-    background-color: rgba(245, 245, 245, 0.733);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
-    margin-top: 20px;
-    width:85%;
-    padding: 5px 5px;
-    display: flex;
-    gap: 10px;
+.bgImage .sectionContainer .leftSection .navigation .navComponent {
+  background-color: rgba(245, 245, 245, 0.733);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 85%;
+  padding: 5px 5px;
+  display: flex;
+  gap: 10px;
 }
 
 .bgImage .sectionContainer .leftSection .navigation .navComponent .navImg {
-    width: 30%;
-    align-self: baseline;
+  width: 30%;
+  align-self: baseline;
 }
 
 .bgImage .sectionContainer .leftSection .navigation .navComponent .navImg img {
-    width: 100%;
+  width: 100%;
 }
 /*div{
     border: 1px solid black;
 }*/
 
-.bgImage .sectionContainer .leftSection .navigation .navComponent .navHead
-{
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
+.bgImage .sectionContainer .leftSection .navigation .navComponent .navHead {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
 }
-.bgImage .sectionContainer .rightSection{
-    width: 100%;
-    height: 90vh;
-}
-.bgImage .sectionContainer .rightSection{
-    width: 77%;
-    height: 86vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(246, 224, 108, 0.66);
-    border-radius: 20px;
-    margin: 1.1rem;
-    align-content: center;
-}
-.bgImage .sectionContainer .rightSection .mainContainer{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-}
-.bgImage .sectionContainer .rightSection .mainContainer .header-mainContainer{
-    font-size: 1.6rem;
-    padding-top: 10px;
-    height: 8vh;
-    background: rgba(255, 255, 255, 0.78);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    position: relative;
-    text-align: center;
-}
-.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer{
-    padding-top: 6%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;  
-}
-.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer .icon .icon-image{
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    border: 1px solid black;
 
+.bgImage .sectionContainer .rightSection {
+  width: 77%;
+  height: 86vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(246, 224, 108, 0.66);
+  border-radius: 20px;
+  margin: 1.1rem;
+  justify-content: flex-start;
 }
-.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer .icon{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.bgImage .sectionContainer .rightSection .mainContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
 }
-.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer .icon .btn{
-    background: rgba(255, 250, 250, 0.8);
-    border-radius: 20px;
-    text-align: center;
-    padding: 10px;
-    transition: all 400ms ease;
+.bgImage .sectionContainer .rightSection .mainContainer .header-mainContainer {
+  font-size: 1.6rem;
+  padding-top: 10px;
+  height: 8vh;
+  background: rgba(255, 255, 255, 0.78);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  text-align: center;
+}
+.bgImage .sectionContainer .rightSection .mainContainer .main-mainContainer {
+  padding-top: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.bgImage
+  .sectionContainer
+  .rightSection
+  .mainContainer
+  .main-mainContainer
+  .icon
+  .icon-image {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+}
+.bgImage
+  .sectionContainer
+  .rightSection
+  .mainContainer
+  .main-mainContainer
+  .icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bgImage
+  .sectionContainer
+  .rightSection
+  .mainContainer
+  .main-mainContainer
+  .icon
+  .btn {
+  background: rgba(255, 250, 250, 0.8);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  transition: all 400ms ease;
 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: rgba(127, 218, 218, 0.676);
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 
-} 
-.btn:hover{
-    cursor: pointer;
-    background: rgba(127, 218, 218, 0.676);
-    
+.toggle-button {
+    display: none;
 }
-a:link{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
-}
+
 /*
 .animations{
     transform: rotate(35deg);
@@ -181,44 +192,92 @@ a:visited{
     );
     display: grid;
 }*/
-.Logo{
-    border-radius: 50%;
-    width: 7%;
-    height: 100%;
-    
-    
+.Logo {
+  border-radius: 50%;
+  width: 7%;
+  height: 100%;
 }
-.Logo > img{
-    width: 11vh;
-    margin-top: 0;
-    
-    border: 3px solid black;
+.Logo > img {
+  width: 11vh;
+  margin-top: 0;
+
+  border: 3px solid black;
 }
-.header{
+.header {
+  display: flex;
+  width: 100%;
+}
+.user_photo {
+  align-self: flex-end;
+}
+.main_data {
+  width: 80%;
+}
+.main_data {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  padding-left: 20px;
+}
+
+.he {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.2rem;
+  padding-top: 10px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .toggle-button {
+    display: block;
+}
+  .bgImage .sectionContainer .rightSection {
+    width: 77%;
+    height: 86vh;
+    position: relative;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    background-color: rgba(246, 224, 108, 0.66);
+    border-radius: 20px;
+    margin: 1.1rem;
+    justify-content: flex-start;
+  }
+
+  .bgImage .sectionContainer .leftSection {
+        width: 40%;
+    height: 90vh;
+    background-color: rgba(127, 218, 218, 0.676);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+  }
 }
-.user_photo{
-    align-self: flex-end;
+
+@media (max-width: 600px) {
+    .toggle-button {
+    display: block;
 }
-.main_data{
-    width:80%;
-}
-.main_data{
-    
-    
+  .bgImage .sectionContainer .rightSection {
+    width: 77%;
+    height: 86vh;
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(246, 224, 108, 0.66);
+    border-radius: 20px;
+    margin: 1.1rem;
+    justify-content: flex-start;
+  }
 
-text-align: center;
-padding-left: 20px;
-
+  .bgImage .sectionContainer .leftSection {
+        width: 50%;
+    height: 90vh;
+    background-color: rgba(127, 218, 218, 0.676);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+  }
 }
-
-.he{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2.2rem;
-    padding-top: 10px;
-}
-
-

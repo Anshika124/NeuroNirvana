@@ -1,10 +1,11 @@
 .home_container{
     
     display: flex;
+    justify-content: space-around;
 }
 .text-home{
-    color:white;
-    font-size: 40px;
+    color: #043975;
+    font-size: 60px;
 }
 .main-text{
     font-size: 25px;
