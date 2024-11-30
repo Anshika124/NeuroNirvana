@@ -22,7 +22,7 @@ const Chatbot = () => {
       setGeneratingAnswer(true);
       try {
         const response = await axios({
-          url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAUnr7mTzp_CTLUF4Nj9QcqtON-mKvlmUw`,
+          url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAS04iZ2BcleJiewIdLaEkiGKzglpCh6wg`,
           method: "post",
           data: {
             contents: [
@@ -68,7 +68,7 @@ const Chatbot = () => {
 
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAUnr7mTzp_CTLUF4Nj9QcqtON-mKvlmUw`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAS04iZ2BcleJiewIdLaEkiGKzglpCh6wg`,
         method: "post",
         data: {
           contents: [
