@@ -22,7 +22,7 @@ const Chatbot = () => {
       setGeneratingAnswer(true);
       try {
         const response = await axios({
-          url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAS04iZ2BcleJiewIdLaEkiGKzglpCh6wg`,
+          url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyD_KE6JgewJU1oKJRze_bIXOB7a4pg-HeU`,
           method: "post",
           data: {
             contents: [
