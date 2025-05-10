@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NeuroNirvana/static/css/main.3ba940a0.css",
-    "main.js": "/NeuroNirvana/static/js/main.3bee0cff.js",
+    "main.js": "/NeuroNirvana/static/js/main.8121afae.js",
     "reactPlayerYouTube.js": "/NeuroNirvana/static/js/reactPlayerYouTube.ceda7deb.chunk.js",
     "reactPlayerSoundCloud.js": "/NeuroNirvana/static/js/reactPlayerSoundCloud.ed3d3c32.chunk.js",
     "reactPlayerVimeo.js": "/NeuroNirvana/static/js/reactPlayerVimeo.d11264f2.chunk.js",
@@ -28,7 +28,7 @@
     "static/media/logo.jpg": "/NeuroNirvana/static/media/logo.9067aa36fd78fa9eb6f6.jpg",
     "index.html": "/NeuroNirvana/index.html",
     "main.3ba940a0.css.map": "/NeuroNirvana/static/css/main.3ba940a0.css.map",
-    "main.3bee0cff.js.map": "/NeuroNirvana/static/js/main.3bee0cff.js.map",
+    "main.8121afae.js.map": "/NeuroNirvana/static/js/main.8121afae.js.map",
     "reactPlayerYouTube.ceda7deb.chunk.js.map": "/NeuroNirvana/static/js/reactPlayerYouTube.ceda7deb.chunk.js.map",
     "reactPlayerSoundCloud.ed3d3c32.chunk.js.map": "/NeuroNirvana/static/js/reactPlayerSoundCloud.ed3d3c32.chunk.js.map",
     "reactPlayerVimeo.d11264f2.chunk.js.map": "/NeuroNirvana/static/js/reactPlayerVimeo.d11264f2.chunk.js.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.3ba940a0.css",
-    "static/js/main.3bee0cff.js"
+    "static/js/main.8121afae.js"
   ]
 }
