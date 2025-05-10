@@ -12,6 +12,8 @@ const Chatbot = () => {
   const [generatingAnswer, setGeneratingAnswer] = useState(false);
   const navigate = useNavigate();
 
+  const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
+
   const sendMessage = async (event) => {
     event.preventDefault();
     if (!input.trim()) return;
@@ -22,7 +24,7 @@ const Chatbot = () => {
       setGeneratingAnswer(true);
       try {
         const response = await axios({
-          url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAUnr7mTzp_CTLUF4Nj9QcqtON-mKvlmUw`,
+          url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
           method: "post",
           data: {
             contents: [
@@ -68,7 +70,7 @@ const Chatbot = () => {
 
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAUnr7mTzp_CTLUF4Nj9QcqtON-mKvlmUw`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
         method: "post",
         data: {
           contents: [
