@@ -26,7 +26,7 @@ import Player1 from "./Player1";
 import Player3 from "./Player3";
 import Good_Option from "./Good_Option";
 
-import Video from "./video";
+import Video from "./Video";
 import Map from "./Map";
 import Map1 from "./Map1";
 import Home_page from "./Home_page";
